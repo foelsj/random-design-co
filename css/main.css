@@ -216,6 +216,14 @@ a {
   border: 1px solid white;
 }
 
+.project:hover {
+  background: hsla(0, 0%, 100%, 0);
+}
+
+.project:hover a {
+  color: white;
+}
+
 .project-image {
   display: block;
   position: relative;
@@ -231,6 +239,7 @@ a {
   text-align: center;
   color: black;
 }
+
 
 /* Footer */
 
