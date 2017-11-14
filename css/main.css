@@ -97,19 +97,149 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* Globals */
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
+body {
+  font-family: sans-serif;
+}
 
+a {
+  text-decoration: none;
+}
 
+/* Header */
 
+.header {
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5em;
+  z-index: 100;
+}
 
+.header h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
 
+.header-title {
+  width: 50%;
+  float: left;
+}
 
+.header-menu-icon {
+  width: 50%;
+  float: right;
+  text-align: right;
+  font-size: 1.5em;
+}
 
+/* Hero */
 
+.hero img {
+  max-width: 100%;
+}
 
+.hero {
+  position: relative;
+  color: white;
+}
 
+.hero-image {
+  display: block;
+  position: relative;
+  z-index: -10;
+  width: 100%;
+}
 
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 4.5em;
+  line-height: 1em;
+}
+
+.button {
+  border: .125em solid white;
+  padding: 1em;
+  font-size: 1.75em;
+  color: white;
+}
+
+.button:hover {
+  background: white;
+  color: black;
+}
+
+/* Info */
+
+.info {
+  padding: 1.25em;
+  border-bottom: .125em solid #ddd;
+  font-size: 1.5em;
+}
+
+/* Gallery */
+
+.latest-work {
+  padding: 1.25em;
+  font-size: 1.5em;
+}
+
+.projects {
+  overflow: auto;
+}
+
+.project {
+  background: hsla(0, 0%, 100%, .7);
+  width: 50%;
+  float: left;
+  position: relative;
+  color: black;
+  font-weight: bold;
+  border: 1px solid white;
+}
+
+.project-image {
+  display: block;
+  position: relative;
+  z-index: -10;
+  width: 100%;
+}
+
+.project-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+}
+
+/* Footer */
+
+.footer {
+  clear: both;
+  text-align: center;
+  font-size: 1.5em;
+  border-top: .125em solid #ddd;
+}
 
 
 
