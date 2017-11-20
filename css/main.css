@@ -192,7 +192,7 @@ img {
 .button {
   display: inline-block;
   border: .125em solid #fff;
-  padding: 1em;
+  padding: .75em;
   font-size: 1.25em;
   color: #fff;
 }
@@ -209,12 +209,8 @@ img {
 /* Gallery */
 
 
-.projects {
-  overflow: auto;
-}
-
 .project {
-  background: hsla(0, 0%, 100%, .7);
+  background: hsla(0, 100%, 100%, .75);
   width: 50%;
   float: left;
   position: relative;
@@ -224,10 +220,7 @@ img {
 }
 
 .project:hover {
-  background: hsla(0, 0%, 100%, 0);
-}
-
-.project:hover a {
+  background: hsla(0, 0%, 0%, 0.5);
   color: #fff;
 }
 
@@ -235,7 +228,6 @@ img {
   display: block;
   position: relative;
   z-index: -10;
-  width: 100%;
 }
 
 .project-name {
@@ -243,8 +235,8 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin: 0;
   text-align: center;
-  color: #000;
 }
 
 
