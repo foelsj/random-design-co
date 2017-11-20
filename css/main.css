@@ -108,17 +108,32 @@ html {
 
 body {
   font-family: sans-serif;
+  padding-top: 3em;
 }
 
 a {
   text-decoration: none;
 }
 
+h1, h2, h3, h4, h5 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+}
+
+.section {
+  padding: 1em;
+  border-bottom: .125em solid #ddd;
+}
+
 /* Header */
 
 .header {
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
   position: fixed;
   top: 0;
   left: 0;
@@ -127,14 +142,10 @@ a {
   z-index: 100;
 }
 
-.header h1 {
-  margin: 0;
-  font-size: 1.5em;
-}
-
 .header-title {
   width: 50%;
   float: left;
+  margin: 0;
 }
 
 .header-menu-icon {
@@ -152,7 +163,7 @@ a {
 
 .hero {
   position: relative;
-  color: white;
+  padding: 0;
 }
 
 .hero-image {
@@ -164,43 +175,39 @@ a {
 
 .hero-content {
   position: absolute;
+  z-index: 10;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  color: #fff;
 }
 
 .hero-content h2 {
   font-size: 4.5em;
   line-height: 1em;
+  margin-top: 0;
 }
 
 .button {
-  border: .125em solid white;
+  display: inline-block;
+  border: .125em solid #fff;
   padding: 1em;
-  font-size: 1.75em;
-  color: white;
+  font-size: 1.25em;
+  color: #fff;
 }
 
 .button:hover {
-  background: white;
-  color: black;
+  background: #fff;
+  color: #000;
 }
 
 /* Info */
 
-.info {
-  padding: 1.25em;
-  border-bottom: .125em solid #ddd;
-  font-size: 1.5em;
-}
+
 
 /* Gallery */
 
-.latest-work {
-  padding: 1.25em;
-  font-size: 1.5em;
-}
 
 .projects {
   overflow: auto;
@@ -211,9 +218,9 @@ a {
   width: 50%;
   float: left;
   position: relative;
-  color: black;
+  color: #000;
   font-weight: bold;
-  border: 1px solid white;
+  border: 1px solid #fff;
 }
 
 .project:hover {
@@ -221,7 +228,7 @@ a {
 }
 
 .project:hover a {
-  color: white;
+  color: #fff;
 }
 
 .project-image {
@@ -237,7 +244,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: black;
+  color: #000;
 }
 
 
@@ -246,8 +253,6 @@ a {
 .footer {
   clear: both;
   text-align: center;
-  font-size: 1.5em;
-  border-top: .125em solid #ddd;
 }
 
 
@@ -284,7 +289,7 @@ a {
     padding: 0;
     position: absolute;
     width: 1px;
-    white-space: nowrap; /* 1 */
+    #fff-space: nowrap; /* 1 */
 }
 
 /*
@@ -303,7 +308,7 @@ a {
     overflow: visible;
     position: static;
     width: auto;
-    white-space: inherit;
+    #fff-space: inherit;
 }
 
 /*
@@ -364,7 +369,7 @@ a {
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important; /* #000 prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
@@ -394,7 +399,7 @@ a {
     }
 
     pre {
-        white-space: pre-wrap !important;
+        #fff-space: pre-wrap !important;
     }
     pre,
     blockquote {
